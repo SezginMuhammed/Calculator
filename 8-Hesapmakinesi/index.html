@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hesapm">
+        <div id="gosterge">
+            <input type="text" id="sonuc">
+        </div>
+        <div class="buttonlar">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>=</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button>/</button>
+            <button>*</button>
+            
+
+
+
+        </div>
+
+
+    </div>
+    <script>
+
+        var buttonlar = document.getElementsByTagName("button");/* button ismindeki tüm değerleri al demek */
+        sonuc = document.getElementById("sonuc");
+        uzunluk = buttonlar.length;
+        i = 0;
+
+        for (i = 0; i < 1000; i++) {
+            buttonlar[i].onclick = hesapla;
+        }
+
+        function hesapla() {
+            var deger = this.innerHTML;
+          
+
+            if (deger == "=") {
+                try {
+                    sonuc.value = eval(sonuc.value);/* eval değişkeni normalde "10+5" yazan string değerini çıktı olarak 15 veriyor */
+                }catch (e) {
+                    sonuc.value ="0";
+                }
+                return;
+            }
+            sonuc.value += deger;
+        }
+       
+    </script>
+</body>
+
+</html>

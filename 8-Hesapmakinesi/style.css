@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    background-color: rgb(175, 176, 175);
+}
+.hesapm{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(38, 126, 203);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+#gosterge{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+#sonuc{
+    border: 2px solid;
+    border-radius:10px ;
+    width: 80%;
+    height: 60px;
+    text-align: right;
+    word-wrap: break-word;
+    font-size: 30px;
+}
+.buttonlar{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.buttonlar button{
+    width: 100px;
+    height: 70px;
+    margin: 4px;
+    border-radius: 5px;
+
+}
